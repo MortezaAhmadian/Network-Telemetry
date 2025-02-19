@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 5s  # Adjust scrape interval as needed
+
+scrape_configs:
+  - job_name: 'spark_consumer'
+    static_configs:
+      - targets: ['spark-consumer:8000']
